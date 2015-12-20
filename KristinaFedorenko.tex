@@ -3,16 +3,6 @@
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License version 1.3c,
 % available at http://www.latex-project.org/lppl/.
-
-% === Стандартный moderncv и стандартные темы ===
-% === Компилируются pdflatex'ом               ===
-% \documentclass[11pt,a4paper]{moderncv}
- %\moderncvtheme[grey]{classic}
-% \usepackage[utf8]{inputenc}
-% \usepackage[T2A]{fontenc}
-% \usepackage[english,russian]{babel}
-
-% === moderncv модифицированный для использования с XeLaTeX и фирменная тема ===
 \documentclass[11pt,a4paper]{moderncv-xetex}
 \moderncvtheme[grey]{papeeria}
 \usepackage{xcolor}
@@ -25,22 +15,32 @@
   \renewcommand\UrlRight{\egroup}}
 
 
-% Шапка
+% Header
 \firstname{Kristina}\familyname{Fedorenko}
-\address{}{Saint Petersburg}
+\address{}{Moscow, Russia}
 \mobile{+79633494107}
 \email{kr.fedorenko@gmail.com}
-\quote{A specialist in data mining and statistics}
+\quote{Data scientist and statistician}
 
-%\nopagenumbers{}
 \begin{document}
 \maketitle
+
 \section{Employment}
-\cventry{2012 -- to present}{SaintPetersburg}{Adriver}{Senior analyst} \newline
-    {Preprocessing data and inventing input variables for data mining models \newline
-    Designing and implementing data mining models for online advertising \newline
-    Modifying and adjusting of these algorithms/models according to different types of input data and the particular objectives that the models were aimed at reaching}
-    % ОБРАЗОВАНИЕ --------------------------------------------------------
+\cventry{Mar 2012--Nov 2013}{Saint Petersburg}{Adriver}{Data Analyst} \newline
+    {Adriver is one of the biggest online advertising companies in Russia. I was a member of the team working on prediction of an action done by a user, like click on banner, registration on a site or buying some goods. According to our prediction the company showed different kind of ads.
+    As a member of such a team I was involved in preparation of huge datasets (dozens of gigabytes) including filtering out noise observations, getting rid of outliers and converting data to convenient format. I spent some time on inventing new variables for data mining models and adjusting algorithms and models according to different nature of data and improving accuracy of predictions.}
+    
+\cventry{Nov 2013--Jun 2015}{Saint Petersburg}{Adriver}{Senior Data Analyst} \newline
+    {After more than a year and a half working in the company I was promoted. At that point I started designing and implementing data mining solutions for online advertisement. I was working on classifying users according to their behavior in order to show them the most relevant ads. Also I've done some work on geotargeting. Aside of tasks involving writing new models, I was involved in improving of existing solutions and testing new ways of doing things. Also, I had been writing department's column in an internal company's blog.\newline
+    Almost all the work was done using R, python, awk and bash scripts. Also I had some experience with spark and H2O.}
+
+\cventry{Jun 2015--Present}{Moscow}{Data Centric Alliance}{Senior Data Analyst} \newline
+    {Data Centric Alliance is an online advertising company. It works with many companies of very different fields ranging from real estate and cars to grocery stores and energetic drinks.
+    I'm a part of the data science team which works with big data. I made a lot of things related to users classification, ranging from gender and age to the way the user made decisions (MBTI). I did a lot of investigation of different algorithms and approaches. Also I was involved in writing posts to the company's blog and organizing and participating in meetups and tech talks. \newline
+    All the data science is done with python and scala using spark and hadoop. I use hdfs, hive and bash almost every day.
+    }
+
+% ОБРАЗОВАНИЕ --------------------------------------------------------
 \section{Education}
 \cventry{2008\,--\,2013}{Saint-Petersburg State University}{}{}\newline
     {
