@@ -1,0 +1,71 @@
+%% Copyright 2013 BarD Software s.r.o
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+% === Стандартный moderncv и стандартные темы ===
+% === Компилируются pdflatex'ом               ===
+% \documentclass[11pt,a4paper]{moderncv}
+ %\moderncvtheme[grey]{classic}
+% \usepackage[utf8]{inputenc}
+% \usepackage[T2A]{fontenc}
+% \usepackage[english,russian]{babel}
+
+% === moderncv модифицированный для использования с XeLaTeX и фирменная тема ===
+\documentclass[11pt,a4paper]{moderncv-xetex}
+\moderncvtheme[grey]{papeeria}
+\usepackage{xcolor}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage[normalem]{ulem}
+\usepackage{url}
+\DeclareUrlCommand\ULurl{
+  \renewcommand\UrlFont{\ttfamily\color{blue}}
+  \renewcommand\UrlLeft{\uline\bgroup}
+  \renewcommand\UrlRight{\egroup}}
+
+
+% Шапка
+\firstname{Kristina}\familyname{Fedorenko}
+\address{}{Saint Petersburg}
+\mobile{+79633494107}
+\email{kr.fedorenko@gmail.com}
+\quote{A specialist in data mining and statistics}
+
+%\nopagenumbers{}
+\begin{document}
+\maketitle
+\section{Employment}
+\cventry{2012 -- to present}{SaintPetersburg}{Adriver}{Senior analyst} \newline
+    {Preprocessing data and inventing input variables for data mining models \newline
+    Designing and implementing data mining models for online advertising \newline
+    Modifying and adjusting of these algorithms/models according to different types of input data and the particular objectives that the models were aimed at reaching}
+    % ОБРАЗОВАНИЕ --------------------------------------------------------
+\section{Education}
+\cventry{2008\,--\,2013}{Saint-Petersburg State University}{}{}\newline
+    {
+    The Department of Statistical Simulation \newline
+    5-year degree in Applied mathematics and Computer Science. The degree is equivalent to level 7 in ISCED classification of UNESCO 2011
+    }
+    % ДИПЛОМНАЯ РАБОТА ---------------------------------------------------
+\section{Graduation thesis}
+    \cvline{Title}{\emph{Analysis of noise structure under different types of observation errors}}
+    \cvline{Scientific Supervisor}{Nina Golyandina}
+    \cvline{Source}{\small \ULurl{http://tinyurl.com/fedorenko-diploma}}
+
+% ТЕХНИЧЕСКИЕ НАВЫКИ -------------------------------------------------
+\section{Professional Skills}
+\cvline{Programming \\ languages}{R, AWK, bash, C++}
+\cvline{Operating systems}{GNU Linux, Windows 7}
+
+
+% ИНОСТРАННЫЕ ЯЗЫКИ --------------------------------------------------
+\section{Additional info}
+\cvline{Languages}{English -- fluent, Russian -- native} 
+%\cvline{Hobbies}{Reading, swimming}
+% РЕКОМЕНДАЦИИ -------------------------------------------------------
+%\section{Рекомендации}
+%\cvline{А.И. Привалов}{Заведующий вычислительным центром НИИЧаВо.\newline \href{mailto:privalov@nii4avo.ru}{privalov@nii4avo.ru}}
+%\cvline{А. Балаганов}{Уполномоченный по копытам ООО <<Рога и Копыта>>\newline \href{mailto:balaganov@horns-and-hooves.com}{balaganov@horns-and-hooves.com}}
+%\cvline{С.М. Брин}{Computer scientist, Internet entrepreneur\newline \href{mailto:theotherboss@google.com}{theotherboss@google.com}}
+\end{document}

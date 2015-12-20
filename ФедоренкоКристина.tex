@@ -1,0 +1,81 @@
+%% Copyright 2013 BarD Software s.r.o
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+% === Стандартный moderncv и стандартные темы ===
+% === Компилируются pdflatex'ом               ===
+% \documentclass[11pt,a4paper]{moderncv}
+% \moderncvtheme[grey]{classic}
+% \usepackage[utf8]{inputenc}
+% \usepackage[T2A]{fontenc}
+% \usepackage[english,russian]{babel}
+
+% === moderncv модифицированный для использования с XeLaTeX и фирменная тема ===
+
+\documentclass[11pt,a4paper]{moderncv-xetex}
+\moderncvtheme[grey]{papeeria}
+\usepackage{xcolor}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage[normalem]{ulem}
+\usepackage{url}
+\DeclareUrlCommand\ULurl{
+  \renewcommand\UrlFont{\ttfamily\color{blue}}
+  \renewcommand\UrlLeft{\uline\bgroup}
+  \renewcommand\UrlRight{\egroup}}
+
+
+% Шапка
+\firstname{Федоренко}\familyname{Кристина}
+% \title{сюда можно вписать что-нибудь в качестве заголовка}
+\address{}{Санкт-Петербург}
+\mobile{+7-963-349-41-07}
+%\phone{+79633494107}
+\email{kr.fedorenko@gmail.com}
+%\extrainfo{}
+\quote{Специалист в области обработки данных и математической статистики}
+
+%\nopagenumbers{}
+
+\begin{document}
+\maketitle
+
+% ОПЫТ РАБОТЫ --------------------------------------------------------
+\section{Опыт работы}
+%\subsection{По специальности}
+\cventry{2012\,--\,по сей день}{Аналитик}{{ООО} <<Adriver>>}{Санкт-Петербург}{}
+% TODO: мало текста
+    {Работа с большими объемами данных, построение статистических моделей для прогнозирования поведения пользователя, статистическая обработка данных, автоматизация сбора данных. Пишу статьи о задачах моего отдела во внутренний блог компании.  }
+
+% ТЕХНИЧЕСКИЕ НАВЫКИ -------------------------------------------------
+\section{Технические навыки}
+% TODO: bash сюда вставь тоже
+\cvline{Языки\\ программирования}{Использую в повседневной работе: R, bash, awk\newline
+Имею представление: Python, C++}
+\cvline{Операционные системы}{GNU Linux (Debian), Windows 7}
+
+% ОБРАЗОВАНИЕ --------------------------------------------------------
+\section{Образование}
+% TODO: напиши, что ты с матмеха
+\cventry{2008\,--\,2013}{Специалист}{СПбГУ}{Санкт-Петербург}{Математико-механический факультет}{Кафедра статистического моделирования}  % arguments 3 to 6 are optional
+
+%\newpage
+% ДИПЛОМНАЯ РАБОТА ---------------------------------------------------
+\section{Дипломная работа}
+\cvline{Название}{\emph{Анализ структуры шума при разных типах ошибок измерений }}
+\cvline{Науч. руководитель}{Нина Эдуардовна Голяндина}
+\cvline{Описание}{\small \ULurl{http://tinyurl.com/po3cjre}}
+
+% ИНОСТРАННЫЕ ЯЗЫКИ --------------------------------------------------
+\section{Иностранные языки}
+\cvline{Английский}{Свободно читаю технические тексты и могу поддерживать разговор}
+\cvline{Немецкий}{Начальные знания}
+% ХОББИ --------------------------------------------------------------
+%\section{Хобби}
+%\cvline{Зимние виды спорта}{Люблю кататься  на горных лыжах и бегать на беговых. А также кататься  на коньках}
+%\cvline{Плаванье}{Посещаю плавательный бассейн несколько раз в неделю}
+%\cvline{Литература}{Приятно провести за книгой несколько увлекательных часов}
+% РЕКОМЕНДАЦИИ -------------------------------------------------------
+%\section{Рекомендации}
+\end{document}

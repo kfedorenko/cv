@@ -1,0 +1,78 @@
+%% Copyright 2013 BarD Software s.r.o
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+% === Стандартный moderncv и стандартные темы ===
+% === Компилируются pdflatex'ом               ===
+% \documentclass[11pt,a4paper]{moderncv}
+% \moderncvtheme[grey]{classic}
+% \usepackage[utf8]{inputenc}
+% \usepackage[T2A]{fontenc}
+% \usepackage[english,russian]{babel}
+
+% === moderncv модифицированный для использования с XeLaTeX и фирменная тема ===
+\documentclass[11pt,a4paper]{moderncv-xetex}
+\moderncvtheme[grey]{papeeria}
+
+\usepackage{xcolor}
+\usepackage[a4paper,margin=1in]{geometry}
+
+% Шапка
+\firstname{Kristina}\familyname{Fedorenko}
+\address{}{Saint Petersburg}
+\mobile{+79633494107}
+\email{kr.fedorenko@gmail.com}
+\quote{A specialist in data mining and statistics}
+
+\begin{document}
+\maketitle
+
+% ОПЫТ РАБОТЫ --------------------------------------------------------
+\section{Employment}
+\cventry{2012--to present}{Saint Petersburg}{AdRiver}{Senior analyst}
+    {
+    \begin{itemize}
+    \item{Preprocessing of data and inventing input variables for data mining models }
+    \item{Designing and implementing data mining models for online advertising}
+    \item{Modification and adjustment of these algorithms/models according to different types of input data and the particular objectives that the models were aimed at reaching}
+    \end{itemize}
+    }
+% ТЕХНИЧЕСКИЕ НАВЫКИ -------------------------------------------------
+\section{Технические навыки}
+\cvline{Языки\\ программирования}{Использую в повседневной работе: Brainfuck\newline
+Имею представление: Python, Java, C\#}
+\cvline{Операционные системы}{BolgenOS, Windows 99}
+
+% ОБРАЗОВАНИЕ --------------------------------------------------------
+\section{Образование}
+\cventry{2008\,--\,2013}{Специалист}{НИИЧаВо}{Соловец}{}{кафедра экспериментальной евгеники}  % arguments 3 to 6 are optional
+
+\newpage
+% ДИПЛОМНАЯ РАБОТА ---------------------------------------------------
+\section{Дипломная работа}
+\cvline{Название}{\emph{Электронно-механическое  устройство для решения научных,
+социологических и иных проблем}}
+\cvline{Науч. руководитель}{Амвросий Амбруазович Выбегалло}
+\cvline{Описание}{\small Высочайшее достижение нейтронной мегалоплазмы!
+Ротор поля наподобие дивергенции градуирует  себя  вдоль  спина и там, внутре, обращает материю
+вопроса в спиритуальные электрические вихри, из  коих  и возникает синегдоха отвечания\dots}
+
+% ИНОСТРАННЫЕ ЯЗЫКИ --------------------------------------------------
+\section{Иностранные языки}
+\cvline{Английский}{Свободно читаю технические тексты и могу поддерживать разговор}
+\cvline{Испанский}{Свободно отличаю от португальского и от каталанского}
+
+% ХОББИ --------------------------------------------------------------
+\section{Хобби}
+\cvline{Геокешинг}{Люблю лазать по болотам в поисках кладов}
+\cvline{Прокрастинация}{Люблю лазать по сайтам в поисках мотиваторов и демотиваторов}
+\cvline{Скалолазание}{Просто люблю лазать}
+
+% РЕКОМЕНДАЦИИ -------------------------------------------------------
+\section{Рекомендации}
+\cvline{А.И. Привалов}{Заведующий вычислительным центром НИИЧаВо.\newline \href{mailto:privalov@nii4avo.ru}{privalov@nii4avo.ru}}
+\cvline{А. Балаганов}{Уполномоченный по копытам ООО <<Рога и Копыта>>\newline \href{mailto:balaganov@horns-and-hooves.com}{balaganov@horns-and-hooves.com}}
+\cvline{С.М. Брин}{Computer scientist, Internet entrepreneur\newline \href{mailto:theotherboss@google.com}{theotherboss@google.com}}
+\end{document}
